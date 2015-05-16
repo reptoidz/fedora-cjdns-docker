@@ -1,6 +1,7 @@
-FROM ubuntu:saucy
-RUN apt-get update
-RUN apt-get install -y nodejs git build-essential python jq
+FROM fedora:21
+RUN yum update -y
+RUN yum install -y nodejs git wget
+RUN yum install -y @development-tools
 ADD ./installcjdns.sh /tmp/installcjdns.sh
 RUN /tmp/installcjdns.sh
 ADD ./settings /tmp/settings
