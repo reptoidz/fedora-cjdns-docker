@@ -1,4 +1,4 @@
-# cjdns-docker
+# fedora-cjdns-docker
 
 This is mostly for the purposes of me playing with docker. Use at your own
 risk.
@@ -7,7 +7,7 @@ risk.
 For a simple image, just run:
 
 ```bash
-$ docker build -t cjdns https://github.com/thefinn93/docker
+$ docker build -t cjdns https://github.com/reptoidz/fedora-cjdns-docker/
 $ docker run --privileged cjdns
 ```
 
